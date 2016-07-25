@@ -167,6 +167,9 @@ aside{
 .aside-container-image {
 	padding: 5px 0px 5px 10px;
 }
+.aside-container-image {
+	width: 30%;
+}
 
 
 /* Footer **************************/    
@@ -198,7 +201,7 @@ footer{
 /* Contact page **********************/
 .form-style {
   overflow: hidden;
-  width: 600px;
+  width: 68%;
   margin: auto;
 
 }
@@ -210,7 +213,7 @@ footer{
 
 .form-fieldset-style input, .form-fieldset-style textarea{
 	display: inline-block;
-	width: 90%;
+	width: 95%;
 	margin: 10px 0px 30px 10px;
 	line-height: 3;
 }
@@ -264,7 +267,7 @@ button:hover {
 .image-captions:hover{
 	color: #777777;	
 }
-/* media query**********************/
+/****************************************** media query**********************/
 @media screen and (max-width: 980px) {
 	#top {
 		width: 100%;
@@ -273,7 +276,7 @@ button:hover {
 		margin-left: 200px;
 	}	
 	.submain-container {
-		width:350px;
+		width:60%;
 		padding-bottom: 10px;
 	}
 	.submain-container-image {
@@ -288,8 +291,14 @@ button:hover {
 	    align-self: center;
 	    width: 100%;
 	}
+	.submain-container-text {
+		padding: 20px 20px 40px 20px;
+		text-align: justify;
+		line-height: 1.5;
+
+	}
 	.aside-container {
-		width:170px;
+		width:28%;
 		background-color: #ffffff;
 		margin: auto;
 		margin-top: 10px;
@@ -319,27 +328,31 @@ button:hover {
 	.hr-main {
 		margin: auto
 	}
+	.form-style {
+	  width: 100%;
+	}
 	.form-fieldset-style {
-		width: 55%;
+		width: 95%;
 		margin-left: 10px;
 	}
 }
+/****************************************** media query**********************/
 @media screen and (max-width: 768px) {
-	#navi {
-		float: right;
-		margin-right: 0px;
-	}
+
 	#top {
 		width: 100%;
 	}
 	#name {
 		margin-left: 200px;
 	}	
+	nav {
+		margin-right: 0px;
+	}
 	.main-container{
 		padding: 20px 100px 30px 100px;
 	}
 	.submain-container {
-		width:110%;
+		width:100%;
 		padding-bottom: 10px;
 		float: none;
 	}
@@ -349,7 +362,7 @@ button:hover {
 	    width: 50%;
 	}
 	.aside-container {
-		width: 110%;
+		width: 100%;
 		background-color: #ffffff;
 		margin-top: 20px;
 		padding: 20px;
@@ -371,30 +384,35 @@ button:hover {
 	}
 /* Portfolio page **********************/
 	.row {
-		margin-top: 50px;
+		margin-top: 0px;
+		padding: 0px;
+		float: none;
+		margin-left: 0px;
+		margin-right: 0px;
+		display: inline-block;
 	}
 	.submain-port-container-image {
 	    float: none;
 	    margin: auto;
 	    align-self: center;
-	    width: 110%;
 	    padding: 20px;
 	}
 
 	.image-captions {
-		top:70%;
-		width: 71.5%;
-		margin-left:10px;
+		top: 65%;
+		width: 83.5%;
+		margin-left: 20px;
 	}
 /* Contact page **********************/
 	.hr-main {
 		margin: auto
 	}
 	.form-fieldset-style {
-		width: 96%;
+		width: 94%;
 		margin-left: 10px;
 	}
 }
+/****************************************** media query**********************/
 @media screen and (max-width: 640px) {
 	#top {
 		width: 100%;
@@ -421,11 +439,37 @@ button:hover {
 	    width: 100%;
 	}
 	.aside-container {
-		width: 80%;
-		margin-right: 10%;
+		width: 86%;
+		margin-right: 7%;
 
 	}
+/* Portfolio page **********************/
+	.row {
+		width: 100%;
+		margin-top: 0px;
+		padding: 0px;
+		float: none;
+		margin-left: 0px;
+		margin-right: 0px;
+		display: inline;
+	}
+	.submain-port-container-image {
+	    float: none;
+	    margin: auto;
+	    align-self: center;
+	    padding: 20px;
+	    width:100%;
+	}
+
+	.image-captions {
+		top: -250%
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}	
+
+/* Contact page **********************/	
 	.form-fieldset-style {
-    	width: 55%;
+    	width: 95%;
 	}
 }
