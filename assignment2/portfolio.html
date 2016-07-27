@@ -3,7 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Portfolio | Tatiana Grigorieva</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://bootswatch.com/yeti/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrapstyle.css">
 
   <!--[if lt IE 9]>
 
@@ -13,63 +17,84 @@
 
 </head>
 <body>
-	<header id="top">
-		<div class="container">
-			<a href="index.html" id="logo">Tatiana Grigorieva</a>	
-			<nav class="other-fonts">
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</div>
-	</header>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	  <div class="container">
+	    <div class="navbar-header">
 
-	<main class="container">
-		<section class="main-section">
-			 <h1>Portfolio</h1>
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">Tatiana Grigorieva</a>
+	    </div>
 
-				<div class="project">
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="index.html">About</a></li>
+	        <li><a href="portfolio.html">Portfolio</a></li>
+	        <li><a href="contact.html">Contact</a></li>
+	      </ul>
+	    </div>
+	    </div>
+	  </div>
+	</nav>
+<!-- Main section -->
+<div class="container main-section">
+	<div class="row">
+		<div class="col-lg-6 col-md-12">
+			<h1>About Me</h1>
+			<hr>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 project">
 					<img src="assets/images/img-port-1.jpg" alt="hangman">
 
-					<h3>Hangman</h3>
+					<h4>Hangman</h4>
 				 </div>
-				 <div class="project">
+				 <div class="col-lg-6 col-md-6 thumb project">
 					 <img src="assets/images/img-port-2.jpg" alt="RPG Game">
 
-					 <h3>RPG Game</h3>
+					 <h4>RPG Game</h4>
 				</div>
-				<div class="project">
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 thumb project">
 					<img src="assets/images/img-port-3.jpg" alt="Trivia Game">
-					<h3>Trivia Game</h3>
+					<h4>Trivia Game</h4>
 				</div>
-				<div class="project">
+				<div class="col-lg-6 col-md-6 thumb project">
 					 <img src="assets/images/img-port-4.jpg" alt="Rutgers Info Widget">
 
-					 <h3>Rutgers Info Widget</h3>
+					 <h4>Rutgers Info Widget</h4>
 				</div>
-				<div class="project">
-					<img src="assets/images/img-port-5.jpg" alt="Rock Paper Scissors">
-					<h3>Rock Paper Scissors</h3>
-				 </div>
-
-		</section>
-
-		<aside class="aside-container">
-			<div id="connect">
-				<h2>Connect with Me</h2>
-
-				<a href="https://www.linkedin.com/in/tatiana-grigorieva-0a1785102" target="_blank"><img class="aside-container-image" src="assets/images/linkedin.png"></a>
-
-				<a href="http://stackoverflow.com/users/3431043/user3431043" target="_blank"><img class="aside-container-image" src="assets/images/stackoverflow.png"></a>
-
-				<a href="https://github.com/tsg1204" target="_blank"><img class="aside-container-image" src="assets/images/github.png"></a>
 			</div>
-		</aside>
-	</main>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 thumb project">
+					<img src="assets/images/img-port-5.jpg" alt="Rock Paper Scissors">
+					<h4>Rock Paper Scissors</h4>
+				 </div>
+			</div>
+  		</div>
 
-	<footer>
-	  <div id="copywrite" class="container">&copy;Copywrite 2016 Tatiana Grigorieva</div>
-	</footer>
+		<div class="col-lg-4 col-md-12 text-center aside-container">
+			<h4>Connect with Me</h4>
+
+			<a href="https://www.linkedin.com/in/tatiana-grigorieva-0a1785102" target="_blank"><img class="aside-container-image" src="assets/images/linkedin.png"></a>
+
+			<a href="http://stackoverflow.com/users/3431043/user3431043" target="_blank"><img class="aside-container-image" src="assets/images/stackoverflow.png"></a>
+
+			<a href="https://github.com/tsg1204" target="_blank"><img class="aside-container-image" src="assets/images/github.png"></a>
+		</div>
+	</div>
+	<!-- end Main section -->
+	</div> <!--<div class="container">-->	<!-- Footer section -->
+	<footer class="footer">
+      <div class="container">
+        <p id="copywrite" class="text-muted">&copy;Copywrite 2016 Tatiana Grigorieva</p>
+      </div>
+    </footer>
 
 </body>
 </html>
