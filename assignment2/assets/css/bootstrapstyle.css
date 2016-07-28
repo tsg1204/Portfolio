@@ -3,7 +3,7 @@
 	background: #666;	
 }
 .aside-container {
-	margin-top: 40px;
+	margin-top: 30px;
 
 }
 .aside-container-image {
@@ -66,4 +66,7 @@ footer {
 }
 .project h4:hover{
 	color: #777777;	
+}
+.project-list {
+	margin-left: 60px;
 }
