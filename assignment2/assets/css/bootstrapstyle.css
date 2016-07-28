@@ -12,6 +12,8 @@
 	margin: 10px 0px 0px 10px;
 }
 .auth-image {
+	width: 200px;
+	height: auto;
 	padding: 0px 10px 5px 0px;
 }
 .format {
@@ -69,4 +71,34 @@ footer {
 }
 .project-list {
 	margin-left: 60px;
+}
+/********** Animation *******************************/
+.aside-container {
+    -webkit-animation-name: social; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 3; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: reverse; /* Chrome, Safari, Opera */
+    animation-name: social;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+    animation-delay: 2s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes social {
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:0px;}
+    50%  {left:0px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes social {
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:0px;}
+    50%  {left:0px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
 }
